@@ -27,13 +27,12 @@ function on.paint(gc)
 	end
 
 	-- Make a list with unique eigenvalues
-	local hash = {};
 	local unique = {};
 	local found = false;
 	for _, v in pairs(result) do
 		for index, value in pairs(unique) do
 			if value == v then
-				found = true;	
+				found = true;
 			end
 		end
 		if found == false then
